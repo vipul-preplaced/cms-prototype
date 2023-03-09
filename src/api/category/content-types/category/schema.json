@@ -12,14 +12,12 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
+      "type": "string"
     },
-    "restaurants": {
+    "blogs": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::restaurant.restaurant",
+      "target": "api::blog.blog",
       "inversedBy": "categories"
     }
   }
